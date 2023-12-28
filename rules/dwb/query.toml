@@ -1,0 +1,23 @@
+[metadata]
+creation_date = "2023/12/28"
+maturity = "development"
+updated_date = "2023/12/28"
+
+[rule]
+author = ["dwb"]
+description = "dwb_description"
+enabled = true
+interval = "5m"
+language = "kuery"
+name = "dwb_query"
+note = "dwb_note"
+references = ["dwb"]
+risk_score = 10
+rule_id = "e7f7943f-c43e-43e4-a9ee-250708ff250c"
+severity = "low"
+type = "query"
+
+query = '''
+event.dataset: *
+'''
+
