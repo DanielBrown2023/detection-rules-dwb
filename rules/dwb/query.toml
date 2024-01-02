@@ -7,6 +7,8 @@ updated_date = "2023/12/28"
 author = ["dwb"]
 description = "dwb_description"
 enabled = true
+from = "now-9m"
+index = ["logs-*"]
 interval = "5m"
 language = "kuery"
 name = "dwb_query"
@@ -20,4 +22,3 @@ type = "query"
 query = '''
 event.dataset: *
 '''
-

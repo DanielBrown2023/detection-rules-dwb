@@ -1,0 +1,23 @@
+[metadata]
+creation_date = "2024/01/02"
+maturity = "development"
+updated_date = "2024/01/02"
+
+[rule]
+author = ["dwb"]
+description = "dwb_description"
+enabled = true
+from = "now-9m"
+index = ["logs-*", " endgame-*"]
+interval = "5m"
+language = "eql"
+name = "eql"
+risk_score = 1
+rule_id = "bc0deeda-8166-4412-bdb5-2062a3354f8a"
+severity = "low"
+type = "eql"
+
+query = '''
+any where process.name == "bash"
+'''
+
