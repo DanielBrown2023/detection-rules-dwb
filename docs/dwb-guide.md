@@ -24,10 +24,26 @@
       ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
       ls -l rules/dwb
     ```
-  
-
-
-
+  ### new_terms
+    ```bash
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ls -l rules/dwb
+    ```  
+  ### threshold
+    ```bash
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ls -l rules/dwb
+    ```
+  ### query
+    ```bash
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ls -l rules/dwb
+    ```
+  ### eql
+    ```bash
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ls -l rules/dwb
+    ```
 
 
 
