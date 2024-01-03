@@ -19,27 +19,105 @@
   ```
 
 ## create-rule
-  ### eql
+  ### eql `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml`
     ```bash
       ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+
+      Rule type (query, saved_query, machine_learning, eql, esql, threshold, threat_match, new_terms): eql
+      actions (multi, comma separated): 
+      alert_suppression: 
+      author (required)  (multi, comma separated): dwb
+      building_block_type: 
+      description (required): dwb_description
+      enabled: true
+      event_category_override: 
+      exceptions_list (multi, comma separated): 
+      false_positives (multi, comma separated): 
+      filters (multi, comma separated): 
+      from: now-9m
+      index (multi, comma separated): logs-*, endgame-*
+      interval: 5m
+      license: 
+      max_signals: 
+      meta: 
+      name (required): eql_template
+      note: 
+      query (required): process where process.name == "bash"
+      references (multi, comma separated): 
+      related_integrations (multi, comma separated): 
+      required_fields (multi, comma separated): 
+      risk_score (required): 1
+      risk_score_mapping (multi, comma separated): 
+      rule_id [9a26b2e7-ba55-4ff2-ae60-b715a490da6d] ("n/a" to leave blank)  (required): 
+      rule_name_override: 
+      setup: 
+      severity (required): low
+      severity_mapping (multi, comma separated): 
+      tags (multi, comma separated): dwb
+      add mitre tactic? [y/N]: N
+      throttle: 
+      tiebreaker_field: 
+      timeline_id: 
+      timeline_title: 
+      timestamp_field: 
+      timestamp_override: 
+      to: 
       ls -l rules/dwb
     ```
-  ### new_terms
+  ### query `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/query.toml`
     ```bash
-      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/query.toml
+      Rule type (query, saved_query, machine_learning, eql, esql, threshold, threat_match, new_terms): query
+      actions (multi, comma separated): 
+      alert_suppression: 
+      author (required)  (multi, comma separated): dwb
+      building_block_type: 
+      description (required): dwb_description
+      enabled: true
+      exceptions_list (multi, comma separated): 
+      false_positives (multi, comma separated): 
+      filters (multi, comma separated): 
+      from: now-9m
+      index (multi, comma separated): logs-*
+      interval: 5m
+      language (required): kuery
+      license: 
+      max_signals: 
+      meta: 
+      name (required): query_template
+      note: 
+      query (required): @timestamp:*
+      references (multi, comma separated): 
+      related_integrations (multi, comma separated): 
+      required_fields (multi, comma separated): 
+      risk_score (required): 1
+      risk_score_mapping (multi, comma separated): 
+      rule_id [e39dc4eb-934f-4a74-905d-041a6288012b] ("n/a" to leave blank)  (required): 
+      rule_name_override: 
+      setup: 
+      severity (required): low
+      severity_mapping (multi, comma separated): 
+      tags (multi, comma separated): dwb
+      add mitre tactic? [y/N]: 
+      throttle: 
+      timeline_id: 
+      timeline_title: 
+      timestamp_override: 
+      to:
       ls -l rules/dwb
     ```  
-  ### threshold
+  ### new_terms `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/new_terms.toml`
     ```bash
-      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/new_terms.toml
       ls -l rules/dwb
     ```
-  ### query
+  
+  ### threshold ``
     ```bash
-      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/threshold.toml
       ls -l rules/dwb
     ```
-  ### eql
+  ### IOC ``
     ```bash
       ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
       ls -l rules/dwb

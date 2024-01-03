@@ -1,7 +1,7 @@
 [metadata]
-creation_date = "2023/12/28"
+creation_date = "2024/01/03"
 maturity = "development"
-updated_date = "2023/12/28"
+updated_date = "2024/01/03"
 
 [rule]
 author = ["dwb"]
@@ -11,14 +11,14 @@ from = "now-9m"
 index = ["logs-*"]
 interval = "5m"
 language = "kuery"
-name = "dwb_query"
-note = "dwb_note"
-references = ["dwb"]
-risk_score = 10
-rule_id = "e7f7943f-c43e-43e4-a9ee-250708ff250c"
+name = "query_template"
+risk_score = 1
+rule_id = "e39dc4eb-934f-4a74-905d-041a6288012b"
 severity = "low"
+tags = ["dwb"]
 type = "query"
 
 query = '''
-event.dataset: *
+@timestamp:*
 '''
+
