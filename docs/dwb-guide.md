@@ -111,15 +111,19 @@
       ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/new_terms.toml
       ls -l rules/dwb
     ```
-  
-  ### threshold ``
+  ### threshold `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/threshold.toml`
     ```bash
       ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/threshold.toml
       ls -l rules/dwb
     ```
-  ### IOC ``
+  ### threat_match `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/threat_match.toml`
     ```bash
-      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/eql.toml
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/threat_match.toml
+      ls -l rules/dwb
+    ```
+  ### machine_learning `./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/machine_learning.toml`
+    ```bash
+      ./env/detection-rules-build/bin/python -m detection_rules create-rule rules/dwb/machine_learning.toml
       ls -l rules/dwb
     ```
 
