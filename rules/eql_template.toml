@@ -6,16 +6,12 @@ updated_date = "2024/01/03"
 [rule]
 author = ["dwb"]
 description = "dwb_description"
-enabled = true
-from = "now-9m"
 index = ["logs-*", " endgame-*"]
-interval = "5m"
 language = "eql"
-name = "eql_template1"
+name = "eql_template"
 risk_score = 1
-rule_id = "9b26b2e7-ba55-4ff2-ae60-b715a490da6d"
+rule_id = "9a26b2e7-ba55-4ff2-ae60-b715a490da6d"
 severity = "low"
-tags = ["dwb"]
 type = "eql"
 
 query = '''

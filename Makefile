@@ -53,6 +53,15 @@ release: deps
 	mkdir dist
 	cp -r releases/*/*.zip dist/
 
+.PHONY: release-update
+release-update: deps
+	@echo "RELEASE: $(app_name)"
+	$(PYTHON) -m detection_rules dev build-release --update-version-lock
+	rm -rf dist
+	mkdir dist
+	cp -r releases/*/*.zip dist/
+
+
 .PHONY: kibana-commit
 kibana-commit: deps
 	@echo "PREP KIBANA-COMMIT: $(app_name)"
